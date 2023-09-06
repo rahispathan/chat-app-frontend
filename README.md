@@ -26,7 +26,7 @@ Now install the dependencies
 yarn install
 ```
 
-Start Frontend.
+Start Frontend
 ```shell
 cd public
 yarn start
