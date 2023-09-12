@@ -1,4 +1,4 @@
 #!/bin/bash
-helm uninstall appb .
-kubectl get pods
+#helm uninstall appb .
+#kubectl get pods
 helm  install app .
