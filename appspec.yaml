@@ -1,0 +1,27 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /home/chat-app-frontend/app
+
+#permissions:
+ # - object: /
+  #  pattern: "**"
+  #  owner: ubuntu
+   # group: ubuntu
+
+hooks:
+ # BeforeInstall:
+   # - location: script/remove_jww_backend_nodejs
+     # timeout: 300
+     # runas: ubuntu
+  ApplicationStop:
+    - location: script/stop_script
+      timeout: 300
+      # runas: ubuntu
+
+  ApplicationStart:
+    - location: script/start_script
+      #  timeout: 300
+      # runas: ubuntu
